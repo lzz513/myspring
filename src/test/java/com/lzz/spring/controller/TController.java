@@ -10,7 +10,6 @@ import com.lzz.spring.service.IService;
 import com.lzz.spring.service.TService;
 
 import java.util.List;
-
 @Controller
 @RequestMapping("/user")
 public class TController {
@@ -37,6 +36,7 @@ public class TController {
         user.setName(name);
         user.setAge(Integer.valueOf(age));
         service.insertUser(user);
+        System.out.println(user);
         return "insert cg";
     }
 
